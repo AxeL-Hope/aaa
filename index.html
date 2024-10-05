@@ -66,10 +66,21 @@
             border-color: var(--tg-theme-secondary-bg-color)
         }
         
+        footer {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 12px;
+            color: gray;
+        }
+        
     </style>
 </head>
 <body>
-    <div class="Main">
+    <div class="Main">    
+        <footer>
+            Версия: 0.0.1
+        </footer>
         <h1>Тестовое приложение</h1>
         <img src="{{ url_for('static', filename='bot.png') }}" alt="">
         <p></p>
